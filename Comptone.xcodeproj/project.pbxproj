@@ -48,6 +48,7 @@
 		8433AB864B6AA4DD0694AF34 /* Pods-Comptone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Comptone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Comptone/Pods-Comptone.debug.xcconfig"; sourceTree = "<group>"; };
 		916D801C7F86AEC11EBD6A7B /* Pods-Comptone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Comptone.release.xcconfig"; path = "Pods/Target Support Files/Pods-Comptone/Pods-Comptone.release.xcconfig"; sourceTree = "<group>"; };
 		96C5F630DD8D8AC177E9C8EA /* Pods-ComptoneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComptoneUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ComptoneUITests/Pods-ComptoneUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B009F8A422DFA6D400BFCC01 /* Comptone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Comptone.entitlements; sourceTree = "<group>"; };
 		B08E44F4229C7FB500D89DDA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B08E44F622A0676500D89DDA /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		B08E44FC22A06B1E00D89DDA /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
@@ -153,6 +154,7 @@
 		B0F08E32226B82EB0041488B /* Comptone */ = {
 			isa = PBXGroup;
 			children = (
+				B009F8A422DFA6D400BFCC01 /* Comptone.entitlements */,
 				B08E44FE22A1A55E00D89DDA /* API */,
 				B08E44FB22A06B1000D89DDA /* Models */,
 				B0F08E33226B82EB0041488B /* AppDelegate.swift */,
@@ -257,6 +259,9 @@
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
+							com.apple.Push = {
+								enabled = 1;
+							};
 						};
 					};
 					B0F08E43226B82F40041488B = {
@@ -332,6 +337,7 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -344,6 +350,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -605,6 +612,7 @@
 			baseConfigurationReference = 8433AB864B6AA4DD0694AF34 /* Pods-Comptone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Comptone/Comptone.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F6J3L6W9J6;
@@ -626,6 +634,7 @@
 			baseConfigurationReference = 916D801C7F86AEC11EBD6A7B /* Pods-Comptone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Comptone/Comptone.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F6J3L6W9J6;

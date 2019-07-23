@@ -7,6 +7,7 @@ target 'Comptone' do
 
   # Pods for Comptone
   pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
   pod 'Firebase/Analytics'
   pod 'Firebase/Database'
   pod 'Moya'
